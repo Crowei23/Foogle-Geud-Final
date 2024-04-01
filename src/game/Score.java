@@ -1,16 +1,9 @@
 package game;
-
-public class Score implements ScoreCounter{
-
-package game;
-
-
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+public class Score{
 
-
-public class Score {
     private int score;
     private int tries;
 
