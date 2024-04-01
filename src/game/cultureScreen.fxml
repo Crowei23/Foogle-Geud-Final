@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="-4.0" layoutY="-2.0" prefHeight="109.0" prefWidth="606.0" spacing="20.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Foogle Geud ">
+               <font>
+                  <Font name="Arial Narrow Bold" size="50.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="How does Foogle autocomplete this query?" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Narrow" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="50.0" layoutY="107.0" prefHeight="48.0" prefWidth="497.0" spacing="10.0">
+         <children>
+            <Line endX="395.29290771484375" endY="-1.864088535308838" startX="899.3858032226562" startY="-1.864088535308838" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Beginning of query " textAlignment="CENTER" wrappingWidth="158.63238525390625" />
+            <Line endX="403.69293212890625" startX="-100.0" />
+         </children>
+      </VBox>
+      <Line endX="99.99998474121094" endY="-27.600006103515625" layoutX="-50.0" layoutY="172.0" startX="99.99998474121094" startY="-64.0" />
+      <Accordion layoutX="180.0" layoutY="203.0" />
+      <Line endX="99.99998474121094" endY="-25.20001220703125" layoutX="455.0" layoutY="171.0" startX="99.99998474121094" startY="-64.0" />
+      <TextArea layoutX="190.0" layoutY="108.0" prefHeight="37.0" prefWidth="364.0" />
+      <Line endX="-99.50001525878906" endY="130.0" layoutX="150.0" layoutY="168.0" startX="-99.50001525878906" startY="-23.100006103515625" />
+      <Line endX="-99.50001525878906" endY="130.0" layoutX="653.0" layoutY="168.0" startX="-99.50001525878906" startY="-23.100006103515625" />
+      <Line endX="403.69293212890625" layoutX="150.0" layoutY="298.0" startX="-100.0" />
+      <VBox layoutX="60.0" layoutY="151.0" prefHeight="143.0" prefWidth="276.0" spacing="7.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ans1" wrappingWidth="33.291778564453125" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ans2" wrappingWidth="34.89178466796875" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ans3" wrappingWidth="33.29180908203125">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ans4" wrappingWidth="42.89178466796875" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ans5" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ans6" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="49.0" layoutY="298.0" prefHeight="48.0" prefWidth="505.0" spacing="80.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Round" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Score" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Guesses" />
+         </children>
+      </HBox>
+   </children>
+</Pane>
