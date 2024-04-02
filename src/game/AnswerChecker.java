@@ -20,32 +20,29 @@ public abstract class AnswerChecker implements ScoreCounter {
 		            score.increaseScore(); 
 		            System.out.println("Score: " + score.getScore());
 		            System.out.println("Tries left: " + score.getTriesLeft());
-		        }
-		        else if (Question.peopleInputIsCorrect(peopleQuestions, userInput)) {
+		        } else if (Question.peopleInputIsCorrect(peopleQuestions, userInput)) {
 		            System.out.println("People - Right answer");
 		            score.increaseScore();    
 		            System.out.println("Score: " + score.getScore());
 		            System.out.println("Tries left: " + score.getTriesLeft());
-		        }
-		        else if (Question.animalInputIsCorrect(animalQuestions, userInput)) {
+		        }else if (Question.animalInputIsCorrect(animalQuestions, userInput)) {
 		            System.out.println("Animal - Right answer");
 		            score.increaseScore(); 
 		            System.out.println("Score: " + score.getScore());
 		            System.out.println("Tries left: " + score.getTriesLeft());
-		        }
-		        else if (Question.foodInputIsCorrect(foodQuestions, userInput)) {
+		        }else if (Question.foodInputIsCorrect(foodQuestions, userInput)) {
 		            System.out.println("Food - Right answer");
 		            score.increaseScore(); 
 		            System.out.println("Score: " + score.getScore());
 		            System.out.println("Tries left: " + score.getTriesLeft());
 		        }else {
 		            System.out.println("No");
-		            System.out.println(Score.displayIncorrectGuess());
+		            System.out.print(Score.displayIncorrectGuess());
 		            score.decreaseTries();
 		            System.out.println("Tries left: " + score.getTriesLeft());
 		            
-		        }
-		       if (!score.hasTriesLeft()) {
+		        } 
+		        if (!score.hasTriesLeft()) {
 		    	   System.out.println("Game Over!");
 		       }
 		        
