@@ -11,6 +11,7 @@ public class Question{
      }
      
 //Culture questions
+    // listOfCultureQuestions returns true if any of the questions appear
         public static ArrayList<Question> listOfCultureQuestions() {
         	final ArrayList<Question> cultureQuestions = new ArrayList<>(10);
 	        cultureQuestions.add(new Question("Sparkling ____", 

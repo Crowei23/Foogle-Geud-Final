@@ -39,7 +39,7 @@ public class Score{
     }
 
 
-    public Text displayIncorrectGuess() {
+    public static Text displayIncorrectGuess() {
         Text incorrectSymbol = new Text("X");
         incorrectSymbol.setFill(Color.RED);
         incorrectSymbol.setFont(Font.font("Arial", 24));
