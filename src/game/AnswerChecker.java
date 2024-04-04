@@ -80,6 +80,7 @@ public class AnswerChecker implements ScoreCounter {
 	            if (score.getScore() == 5) {
 	            	scanner.close();
 	                 System.out.println("Congratulations! You have guessed all possible answers correctly for this question.");
+	                 System.out.println(selectedQuestion.getAnswers());
 	             }else {
 	            scanner.close();
 	            System.out.println("Game over!");
