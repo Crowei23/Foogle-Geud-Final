@@ -35,14 +35,26 @@ public class Score{
 
 
     public boolean hasTriesLeft() {
-        return this.tries > 0;
+        if (this.tries > 0) {
+        	return true;
+        }
+    	return false;
     }
 
 
     public static Text displayIncorrectGuess() {
         Text incorrectSymbol = new Text("X");
         incorrectSymbol.setFill(Color.RED);
-        incorrectSymbol.setFont(Font.font("Arial", 24));
+        incorrectSymbol.setFont(Font.font("Arial", 64));
         return incorrectSymbol;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
