@@ -48,13 +48,4 @@ public class Score{
         incorrectSymbol.setFont(Font.font("Arial", 64));
         return incorrectSymbol;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
