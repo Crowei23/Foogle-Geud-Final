@@ -2,7 +2,7 @@ package game;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
-public class Score{
+public class Score implements ScoreCounter{
 
     private int score;
     private int tries;
@@ -13,27 +13,27 @@ public class Score{
         this.tries = maxTries;
     }
 
-
+@Override
     public void increaseScore() {
         this.score++;
     }
 
-
+@Override
     public void decreaseTries() {
         this.tries--;
     }
 
-
+@Override
     public int getScore() {
         return this.score;
     }
 
-
+@Override
     public int getTriesLeft() {
         return this.tries;
     }
 
-
+@Override
     public boolean hasTriesLeft() {
         if (this.tries > 0) {
         	return true;
@@ -41,8 +41,7 @@ public class Score{
     	return false;
     }
 
-
-    public static Text displayIncorrectGuess() {
+public Text displayIncorrectGuess() {
         Text incorrectSymbol = new Text("X");
         incorrectSymbol.setFill(Color.RED);
         incorrectSymbol.setFont(Font.font("Arial", 64));

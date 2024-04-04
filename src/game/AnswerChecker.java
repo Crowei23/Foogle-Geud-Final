@@ -1,7 +1,7 @@
 package game;
 import java.util.ArrayList;
 import java.util.Scanner;
-public class AnswerChecker implements ScoreCounter {
+public class AnswerChecker {
 		public static void main(String[] args)  {
 		      ArrayList<Question> cultureQuestions = CultureQuestion.defineCultureQuestions();
 		      ArrayList<Question> peopleQuestions = PeopleQuestion.definePeopleQuestions();
@@ -14,7 +14,7 @@ public class AnswerChecker implements ScoreCounter {
 		      allQuestions.add((animalQuestions));
 		      allQuestions.add((foodQuestions));
 		      
-		      Score score = new Score(3);
+		      ScoreCounter score = new Score(3);
 		      Scanner scanner = new Scanner(System.in);
 		      
 		          // Prompt the user to choose a category
@@ -72,7 +72,7 @@ public class AnswerChecker implements ScoreCounter {
 				            System.out.println("Score: " + score.getScore());
 				        } else {
 				            System.out.println("Incorrect answer.");
-				           // System.out.print(Score.displayIncorrectGuess());
+				            System.out.print(score.displayIncorrectGuess());
 				            score.decreaseTries();
 				            System.out.println("Tries left: " + score.getTriesLeft());
 				        }
