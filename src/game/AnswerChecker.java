@@ -83,9 +83,8 @@ public class AnswerChecker implements ScoreCounter {
 				           // System.out.print(Score.displayIncorrectGuess());
 				            score.decreaseTries();
 				            System.out.println("Tries left: " + score.getTriesLeft());
+				            scanner.close();
 				        }
-
-				    //    scanner.close();
 				    }
 		        }
 }
